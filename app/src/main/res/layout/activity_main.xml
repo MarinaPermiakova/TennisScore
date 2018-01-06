@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context="com.example.marina.tennisscore.MainActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <ImageView
         android:layout_width="match_parent"
@@ -16,7 +20,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="@dimen/margin_36"
         android:baselineAligned="false"
         android:orientation="horizontal">
 
@@ -30,10 +34,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="16dp"
+                android:padding="@dimen/padding_16"
                 android:text="@string/_1st_player"
                 android:textColor="@color/colorAccent"
-                android:textSize="28sp" />
+                android:textSize="@dimen/text_size_28" />
 
             <TextView
                 android:id="@+id/score_player_one"
@@ -42,14 +46,14 @@
                 android:background="@color/colorTransparent"
                 android:gravity="center"
                 android:text="@string/_0"
-                android:textSize="64sp" />
+                android:textSize="@dimen/text_size_64" />
 
             <Button
                 android:id="@+id/button_player_one"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/padding_16"
                 android:onClick="plusPointOne"
                 android:text="@string/points" />
 
@@ -66,11 +70,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="16dp"
+                android:padding="@dimen/padding_16"
                 android:text="@string/_2nd_player"
                 android:textColor="@color/colorAccent"
-                android:textSize="28sp" />
-
+                android:textSize="@dimen/text_size_28" />
 
             <TextView
                 android:id="@+id/score_player_two"
@@ -79,14 +82,14 @@
                 android:background="@color/colorTransparent"
                 android:gravity="center"
                 android:text="@string/_0"
-                android:textSize="64sp" />
+                android:textSize="@dimen/text_size_64" />
 
             <Button
                 android:id="@+id/button_player_two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/padding_16"
                 android:onClick="plusPointTwo"
                 android:text="@string/points" />
 
@@ -94,26 +97,15 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/win_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/linearLayout"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:layout_marginTop="16dp"
-        android:text=""
-        android:textColor="@color/colorPrimary"
-        android:textSize="26sp" />
-
     <Button
         android:id="@+id/reset_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="26dp"
+        android:layout_below="@id/linearLayout"
         android:onClick="resetClick"
+        android:layout_marginTop="@dimen/margin_70"
         android:text="@string/reset" />
 
 </RelativeLayout>
+</ScrollView>
