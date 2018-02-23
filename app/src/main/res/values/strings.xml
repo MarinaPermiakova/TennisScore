@@ -1,8 +1,15 @@
 <resources>
     <string name="app_name">Tennis Score</string>
-    <string name="_1st_player">1st player</string>
+    <string name="_1st_player">player 1</string>
+    <string name="_2nd_player">player 2</string>
     <string name="points">+ point</string>
     <string name="reset">reset</string>
     <string name="_0">0</string>
-    <string name="_2nd_player">2nd player</string>
+    <string name="ace">+ ace</string>
+    <string name="next_game">Next game</string>
+    <string name="next_set">Next set</string>
+    <string name="player_1">player 1:</string>
+    <string name="player_2">player 2:</string>
+    <string name="_1">Player 1:</string>
+
 </resources>
