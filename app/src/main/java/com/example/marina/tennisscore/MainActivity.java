@@ -49,11 +49,11 @@ public class MainActivity extends AppCompatActivity {
     Button nextSetButton;
     Button resetButton;
 
-    String stringForGameOne = "Player 1:";;
-    String stringForGameTwo = "Player 2:";;
+    String stringForGameOne = "Player 1:";
+    String stringForGameTwo = "Player 2:";
 
-    String stringForSetOne = "Player 1:";;
-    String stringForSetTwo = "Player 2:";;
+    String stringForSetOne = "Player 1:";
+    String stringForSetTwo = "Player 2:";
 
 
     static final String STATE_SCOREPLAYER1 = "scorePlayerFirst";
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Disable Buttons for new game score, nwe set score and for reset
+        // Disable Buttons for new game score, for set score and for reset
         nextGameButton = findViewById(R.id.game_button);
         nextGameButton.setEnabled(false);
         nextSetButton = findViewById(R.id.set_button);
